@@ -17,6 +17,7 @@ body {
     margin-bottom: 10px;
     color: white;
     background-image: url("header.jpg");
+	background-size: cover; 
 }
 
 #logo-div {
@@ -72,20 +73,24 @@ body {
 }
 
 #nav-links .nav-link {
-    padding: 0 10px;
+    padding: 10px 10px;
 	margin-left: 10px;
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
 
+#nav-links .nav-link:hover {
+    color: #80ed99;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+}
+
 .nav-link:hover{
 	color: #80ed99;
-	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
 }
 
 .nav-button {
-    background-color: none;
     border: none;
     color: white;
     padding: 10px 15px;
@@ -99,8 +104,8 @@ body {
     transition: box-shadow 0.3s ease;
 }
 
-.nav-button:hover {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7);
+#nav-div .nav-button:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
 }
 
 #subscribe-button {
@@ -124,12 +129,27 @@ body {
 #sidebar-div {
     width: 20%;
     min-height: 400px;
-    text-align: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     margin-right: 5%;
     color: white;
-    background-color: teal;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#sidebar-div ul li p{
+	margin: 0;
+}
+
+#sidebar-div a{
+	box-shadow: none; 
+	text-decoration: none; 
+	color: white; 
+}
+
+#sidebar-div a:hover {
+	text-decoration: underline; 
+	color: #80ed99;
 }
 
 #bodyarea-div {
@@ -155,7 +175,17 @@ body {
     line-height: 25px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: teal;
+    background-color: #243535;
+	display: flex; 
+	align-items: center; 
+}
+
+#logo-footer-div img {
+    margin-right: 20px;
+}
+
+#footer-contact { 
+	display: inline-block;
 }
 
 @media (min-width:992px){
